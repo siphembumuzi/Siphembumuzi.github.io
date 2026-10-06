@@ -1,0 +1,865 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Skills & Professional Development - Eugene Nkosi</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+
+    <style>
+
+        /* =========================================
+           Skills & Professional Development
+        ========================================= */
+
+        .skills-intro {
+            max-width: 900px;
+            margin-bottom: 2.5em;
+        }
+
+        .skills-intro p {
+            font-size: 1.05em;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 1.5em;
+            margin-top: 2em;
+        }
+
+        .skill-card {
+            padding: 1.75em;
+
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 8px;
+
+            background: rgba(255, 255, 255, 0.035);
+
+            transition:
+                border-color 0.25s ease,
+                transform 0.25s ease,
+                background 0.25s ease;
+        }
+
+        .skill-card:hover {
+            border-color: #b74e91;
+            background: rgba(255, 255, 255, 0.065);
+            transform: translateY(-4px);
+        }
+
+        .skill-card h2 {
+            font-size: 1.25em;
+            margin-bottom: 0.5em;
+        }
+
+        .skill-card .skill-description {
+            font-size: 0.9em;
+            margin-bottom: 1.25em;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* Skill Badges */
+
+        .skill-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.65em;
+        }
+
+        .skill-badge {
+            display: inline-block;
+
+            padding: 0.5em 0.85em;
+
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+
+            font-size: 0.85em;
+            font-weight: 600;
+            line-height: 1.4;
+
+            background: rgba(255, 255, 255, 0.06);
+            color: #ffffff;
+        }
+
+        /* Data Analytics Highlight */
+
+        .analytics-card {
+            grid-column: 1 / -1;
+            border-color: rgba(183, 78, 145, 0.5);
+        }
+
+        .analytics-card .skill-badge {
+            border-color: rgba(183, 78, 145, 0.55);
+        }
+
+        /* Professional Development */
+
+        .training-card {
+            grid-column: 1 / -1;
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .training-list {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 0.75em 1.5em;
+            margin-top: 1.5em;
+        }
+
+        .training-item {
+            padding: 0.85em 1em;
+
+            border-left: 3px solid rgba(183, 78, 145, 0.7);
+
+            background: rgba(255, 255, 255, 0.035);
+
+            font-size: 0.9em;
+            line-height: 1.5;
+
+            transition: background 0.25s ease;
+        }
+
+        .training-item:hover {
+            background: rgba(255, 255, 255, 0.07);
+        }
+
+        .training-year {
+            font-size: 0.8em;
+            opacity: 0.65;
+            display: block;
+            margin-top: 0.2em;
+        }
+
+        /* Closing Statement */
+
+        .skills-note {
+            margin-top: 2.5em;
+
+            padding: 1.5em;
+
+            border-left: 4px solid #b74e91;
+
+            background: rgba(255, 255, 255, 0.035);
+
+            border-radius: 0 6px 6px 0;
+        }
+
+        .skills-note p {
+            margin-bottom: 0;
+        }
+
+        /* =========================================
+           Responsive Design
+        ========================================= */
+
+        @media screen and (max-width: 980px) {
+
+            .training-list {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+        @media screen and (max-width: 736px) {
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+                gap: 1em;
+            }
+
+            .skill-card {
+                padding: 1.35em;
+            }
+
+            .analytics-card,
+            .training-card {
+                grid-column: auto;
+            }
+
+            .training-list {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+        /* Accessibility */
+
+        @media screen and (prefers-reduced-motion: reduce) {
+
+            .skill-card,
+            .training-item {
+                transition: none;
+            }
+
+            .skill-card:hover {
+                transform: none;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body class="is-preload">
+
+
+    <!-- =========================================
+         Header
+    ========================================== -->
+
+    <header id="header">
+
+        <a href="index.html" class="title">
+            Eugene Nkosi
+        </a>
+
+        <nav>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="generic.html" class="active">
+                        Skills
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html#one">
+                        Projects
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html#three">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =========================================
+         Main Content
+    ========================================== -->
+
+    <div id="wrapper">
+
+        <section id="main" class="wrapper">
+
+            <div class="inner">
+
+
+                <!-- =================================
+                     Page Introduction
+                ================================== -->
+
+                <h1 class="major">
+                    Skills, Tools &amp; Professional Development
+                </h1>
+
+
+                <div class="skills-intro">
+
+                    <p>
+                        My technical skill set spans software development,
+                        web technologies, database management, cloud
+                        administration, IT infrastructure, and data analytics.
+                    </p>
+
+                    <p>
+                        I apply these technologies to develop practical
+                        solutions, analyze data, solve technical problems,
+                        and transform information into meaningful insights.
+                    </p>
+
+                    <p>
+                        The following section highlights the technologies,
+                        tools, and professional training that contribute to
+                        my technical capabilities.
+                    </p>
+
+                </div>
+
+
+
+                <!-- =================================
+                     Skills Grid
+                ================================== -->
+
+                <div class="skills-grid">
+
+
+                    <!-- =================================
+                         Programming Languages
+                    ================================== -->
+
+                    <article class="skill-card">
+
+                        <h2>
+                            Programming Languages
+                        </h2>
+
+                        <p class="skill-description">
+                            Programming languages I use to develop
+                            applications, implement logic, automate tasks,
+                            and solve programming problems.
+                        </p>
+
+                        <div class="skill-badges">
+
+                            <span class="skill-badge">
+                                C++
+                            </span>
+
+                            <span class="skill-badge">
+                                Python
+                            </span>
+
+                            <span class="skill-badge">
+                                C#
+                            </span>
+
+                            <span class="skill-badge">
+                                JavaScript
+                            </span>
+
+                            <span class="skill-badge">
+                                PHP
+                            </span>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- =================================
+                         Web Development
+                    ================================== -->
+
+                    <article class="skill-card">
+
+                        <h2>
+                            Web Development
+                        </h2>
+
+                        <p class="skill-description">
+                            Technologies used to create responsive,
+                            interactive, and user-friendly web applications.
+                        </p>
+
+                        <div class="skill-badges">
+
+                            <span class="skill-badge">
+                                HTML5
+                            </span>
+
+                            <span class="skill-badge">
+                                CSS
+                            </span>
+
+                            <span class="skill-badge">
+                                React.js
+                            </span>
+
+                            <span class="skill-badge">
+                                Node.js
+                            </span>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- =================================
+                         Databases
+                    ================================== -->
+
+                    <article class="skill-card">
+
+                        <h2>
+                            Databases &amp; Data Management
+                        </h2>
+
+                        <p class="skill-description">
+                            Technologies used for querying, managing,
+                            structuring, cleaning, and preparing data
+                            for analysis.
+                        </p>
+
+                        <div class="skill-badges">
+
+                            <span class="skill-badge">
+                                SQL
+                            </span>
+
+                            <span class="skill-badge">
+                                NoSQL
+                            </span>
+
+                            <span class="skill-badge">
+                                MySQL
+                            </span>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- =================================
+                         Frameworks & APIs
+                    ================================== -->
+
+                    <article class="skill-card">
+
+                        <h2>
+                            Frameworks &amp; API Integration
+                        </h2>
+
+                        <p class="skill-description">
+                            Technologies used for backend development,
+                            application frameworks, and integration
+                            between systems and services.
+                        </p>
+
+                        <div class="skill-badges">
+
+                            <span class="skill-badge">
+                                .NET
+                            </span>
+
+                            <span class="skill-badge">
+                                REST APIs
+                            </span>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- =================================
+                         Data Analytics
+                    ================================== -->
+
+                    <article class="skill-card analytics-card">
+
+                        <h2>
+                            Data Analytics &amp; Visualization
+                        </h2>
+
+                        <p class="skill-description">
+                            Tools used to clean, analyze, visualize,
+                            and communicate data-driven insights
+                            that support informed decision-making.
+                        </p>
+
+                        <div class="skill-badges">
+
+                            <span class="skill-badge">
+                                Microsoft Excel
+                            </span>
+
+                            <span class="skill-badge">
+                                Power BI
+                            </span>
+
+                            <span class="skill-badge">
+                                Tableau
+                            </span>
+
+                            <span class="skill-badge">
+                                Python
+                            </span>
+
+                            <span class="skill-badge">
+                                SQL
+                            </span>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- =================================
+                         Cloud & Identity
+                    ================================== -->
+
+                    <article class="skill-card">
+
+                        <h2>
+                            Cloud &amp; Identity
+                        </h2>
+
+                        <p class="skill-description">
+                            Cloud and identity technologies used for
+                            administration, access management, and
+                            cloud-based infrastructure.
+                        </p>
+
+                        <div class="skill-badges">
+
+                            <span class="skill-badge">
+                                Microsoft Azure
+                            </span>
+
+                            <span class="skill-badge">
+                                Microsoft Entra ID
+                            </span>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- =================================
+                         IT Infrastructure
+                    ================================== -->
+
+                    <article class="skill-card">
+
+                        <h2>
+                            IT Infrastructure &amp; Support
+                        </h2>
+
+                        <p class="skill-description">
+                            Technologies and knowledge used for technical
+                            support, troubleshooting, system administration,
+                            and infrastructure management.
+                        </p>
+
+                        <div class="skill-badges">
+
+                            <span class="skill-badge">
+                                CompTIA A+
+                            </span>
+
+                            <span class="skill-badge">
+                                Apache
+                            </span>
+
+                            <span class="skill-badge">
+                                MySQL
+                            </span>
+
+                            <span class="skill-badge">
+                                PHP
+                            </span>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- =================================
+                         DevOps
+                    ================================== -->
+
+                    <article class="skill-card">
+
+                        <h2>
+                            DevOps &amp; Development Tools
+                        </h2>
+
+                        <p class="skill-description">
+                            Tools and practices used to manage source code,
+                            development workflows, and software delivery.
+                        </p>
+
+                        <div class="skill-badges">
+
+                            <span class="skill-badge">
+                                Git
+                            </span>
+
+                            <span class="skill-badge">
+                                DevOps
+                            </span>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- =================================
+                         Professional Development
+                    ================================== -->
+
+                    <article class="skill-card training-card">
+
+                        <h2>
+                            Professional Development &amp; Training
+                        </h2>
+
+                        <p class="skill-description">
+                            Selected technical courses and professional
+                            development programmes completed to strengthen
+                            my capabilities across software development,
+                            IT, cloud technologies, and data analytics.
+                        </p>
+
+
+                        <div class="training-list">
+                            
+                            <div class="training-item">
+
+                                Complete Data Analyst Bootcamp —
+                                Basics to Advanced
+
+                            </div>
+
+
+                            <div class="training-item">
+
+                                CSS Essential Training
+
+                                <span class="training-year">
+                                    2023
+                                </span>
+
+                            </div>
+
+
+                            <div class="training-item">
+
+                                React: Creating and Hosting a
+                                Full-Stack Site
+
+                                <span class="training-year">
+                                    2022
+                                </span>
+
+                            </div>
+
+
+                            <div class="training-item">
+
+                                SQL Essential Training
+
+                            </div>
+
+
+                            <div class="training-item">
+
+                                Installing Apache, MySQL, and PHP
+
+                            </div>
+
+
+                            <div class="training-item">
+
+                                PHP Essential Training
+
+                            </div>
+
+
+                            <div class="training-item">
+
+                                Microsoft Entra ID: Basics
+
+                            </div>
+
+
+                            <div class="training-item">
+
+                                C# and .NET Essential Training
+
+                            </div>
+
+
+                            <div class="training-item">
+
+                                Azure Administration Essential Training
+
+                            </div>
+
+
+                            <div class="training-item">
+
+                                NoSQL Essential Training
+
+                            </div>
+
+
+                            <div class="training-item">
+
+                                Learning REST APIs
+
+                            </div>
+
+
+                            <div class="training-item">
+
+                                DevOps Foundations
+
+                                <span class="training-year">
+                                    2016
+                                </span>
+
+                            </div>
+
+
+                            <div class="training-item">
+
+                                JavaScript Essential Training
+
+                            </div>
+
+
+                            <div class="training-item">
+
+                                HTML Essential Training
+
+                            </div>
+
+
+                            <div class="training-item">
+
+                                Learning ECMAScript 6+ (ES6+)
+
+                            </div>
+
+
+                            <div class="training-item">
+
+                                Git Essential Training
+
+                            </div>
+
+
+                            <div class="training-item">
+
+                                React Essential Training
+
+                            </div>
+
+
+                            <div class="training-item">
+
+                                Node.js Essential Training
+
+                            </div>
+
+
+                            <div class="training-item">
+
+                                CompTIA A+ Core 1
+                                (220-1201) Full Course &amp;
+                                Practice Exam
+
+                            </div>
+
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+
+
+                <!-- =================================
+                     Closing Statement
+                ================================== -->
+
+                <div class="skills-note">
+
+                    <p>
+
+                        <strong>
+                            Continuous Learning
+                        </strong>
+
+                        <br />
+
+                        I continuously strengthen my technical capabilities
+                        through practical projects, professional training,
+                        problem-solving, and hands-on application of
+                        emerging technologies.
+
+                        <br /><br />
+
+                        Explore my projects to see how I apply these skills
+                        to practical and real-world challenges.
+
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+
+    <!-- =========================================
+         Footer
+    ========================================== -->
+
+    <footer id="footer" class="wrapper alt">
+
+        <div class="inner">
+
+            <ul class="menu">
+
+                <li>
+                    &copy; Eugene Nkosi. All rights reserved.
+                </li>
+
+                <li>
+                    Design:
+                    <a href="https://html5up.net">
+                        HTML5 UP
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =========================================
+         Scripts
+    ========================================== -->
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
